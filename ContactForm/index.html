@@ -13,40 +13,52 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    .error {
+      color : red;
+    }
   </style>
+
+  <script src="contact.js" defer></script>
 </head>
-<body>
+<body style="background-color:darkslategrey;">
 
-  <div style="height: 50%; width: 50%; background-color:aqua; margin-left: 20%; margin-top:5%;">
-  <h1 class="font-bold">Contact Us</h1>
-  <form style="padding:3%">
-  <label>First Name</label> 
-  <input style="margin-left:10px" type="text" placeholder="">
-  <label style="margin-left: 30px;">Last Name</label>
-  <input style="margin-left: 10px;" type="text" placeholder="">
-  <br>
-  <br>
-  <label>Email Address</label>
-  <input type="email">
+  <div style="height: 50%; width: 50%; background-color: antiquewhite; margin-left: 20%; margin-top:5%;">
+    <h1 class="font-bold">Contact Us</h1>
+    <form style="padding:3%" onsubmit="return valid()" >
+      <label>First Name</label> 
+      <input id="firstname" style="margin-left:10px" type="text" placeholder="">
+      <span class="error" id="firstError"></span>
+      
+      <label style="margin-left: 30px;">Last Name</label>
+      <input id="lastname" style="margin-left: 10px;" type="text" placeholder="">
+      <span class="error" id="lastError"></span>
+      <br>
+      <br>
 
-  <br>
-  <h2 style="padding-top: 20px;">Query</h2>
-  <input type="radio" name="query" value="enquiry">
-  <label for="enquiry">General enquiry</label>
+      <label>Email Address</label>
+      <input id="email" type="email">
+      <span class="error" id="emailError"></span><br>
 
-  <input type="radio" name="query" value="request">
-  <label for="request">Support Request</label>
+      <br>
 
-  <br>
-  <textarea style="margin-top: 20px;" name="message" rows="4" cols="50">Message: </textarea>
-  <lable for="message"></lable>
-  <br>
-  <input style="margin-top: 20px;" type="checkbox" name="checkbox">
-  <lable for="checkbox">I consent to being contacted by the team</lable>
+      <h2 style="padding-top: 20px;">Query</h2>
+      <input type="radio" name="query" value="enquiry">
+      <label for="enquiry">General enquiry</label>
+      <input type="radio" name="query" value="request">
+      <label for="request">Support Request</label>
+      <span id="queryError" class="error"></span>
 
-  <br>
-  <button style="background-color: green; width: 50%; margin-top: 10px;">Submit</button>
-</form>
+      <br>
+      <lable for="message"></lable>
+      <textarea id="message" style="margin-top: 20px;" name="message" rows="4" cols="50">Message: </textarea>
+      <span id="messageError"></span>
+      <br>
+      <input id="checkbox" style="margin-top: 20px;" type="checkbox" name="checkbox">
+      <lable for="checkbox">I consent to being contacted by the team</lable>
+      <span class="error" id="checkError"></span>
+      <br>
+      <button style="background-color: green; width: 50%; margin-top: 10px;">Submit</button>
+  </form>
   Message Sent!
   Thanks for completing the form. We'll be in touch soon!
   
