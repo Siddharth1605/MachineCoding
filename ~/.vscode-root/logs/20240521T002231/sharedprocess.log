@@ -1,0 +1,10 @@
+2024-05-21 00:22:42.137 [info] Started initializing default profile extensions in extensions installation folder. file:///root/.vscode/extensions
+2024-05-21 00:22:43.948 [warning] Failed to create default profile extensions manifest in extensions installation folder. file:///root/.vscode/extensions Unable to create file 'vscode-userdata:/root/.vscode/extensions/extensions.json' that already exists when overwrite flag is not set
+2024-05-21 00:22:43.957 [info] Completed initializing default profile extensions in extensions installation folder. file:///root/.vscode/extensions
+2024-05-21 00:24:59.055 [info] Getting Manifest... ritwickdey.liveserver
+2024-05-21 00:24:59.092 [info] Installing extension: ritwickdey.liveserver
+2024-05-21 00:25:06.654 [info] Extension signature is verified: ritwickdey.liveserver
+2024-05-21 00:25:35.236 [info] Extracted extension to file:///root/.vscode/extensions/ritwickdey.liveserver-5.7.9: ritwickdey.liveserver
+2024-05-21 00:25:35.259 [info] Renamed to /root/.vscode/extensions/ritwickdey.liveserver-5.7.9
+2024-05-21 00:25:35.267 [info] Extracting extension completed. ritwickdey.liveserver
+2024-05-21 00:25:35.306 [info] Extension installed successfully: ritwickdey.liveserver
